@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BootStrap Accordion/Collapse with Toggle Icon</title>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+    .panel {
+    border: 0px solid transparent;
+    border-top: 1px solid #ccc;
+}
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        
+    }
+    
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+      
+    }
+    
+    .panel-title {
+        font-size: 14px;
+    }
+    
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+    
+    .more-less {
+        float: right;
+        color: #ccc;
+    }
+    
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+      
+        padding-left: 38px;
+    background: #E4E4E4;
+    font-size: 14px;
+    font-weight: 600;
+    }
+    /* ----- v CAN BE DELETED v ----- */
+    
+    body {}
+    
+    .demo {
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
+    
+    .demo-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        background-color: #212121;
+        text-align: center;
+    }
+    
+    .demo-footer > a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .panel-group .panel+.panel {
+        margin-top: 0px;
+    }
+    
+    #topbar {
+        background: #0076ff;
+        height: 60px;
+    }
+    
+    #topbar ul {
+        padding-left: 10px !important;
+    }
+    
+    #topbar ul li {
+        display: inline;
+    }
+    
+    #topbar ul li img {
+        width: 50px;
+        border-radius: 6px;
+        margin-top: 5px;
+    }
+    
+    #topbar ul li:first-child {
+        float: left;
+    }
+    
+    #topbar ul li p {
+        padding-top: 20px;
+        padding-left: 63px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+    .panel-title a {
+    	 font-size: 16px;
+        font-weight: 600;
+    }
+
+    .panel-default>.panel-heading {
+   
+    background-color: white;
+}
+    </style>
+    <div id="topbar">
+        <ul>
+            <li>
+                <img src="file:///C:/Program%20Files%20(x86)/Pinegrow%20Web%20Designer/placeholders/img7.jpg" />
+            </li>
+            <li>
+                <p>Username</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i>
+						<i class="fa fa-tachometer" aria-hidden="true"></i> &nbsp;Dashboard</a></h4>
+                </div>
+                
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp;Team</a></h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        BBBBBBBBBB
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-users" aria-hidden="true"></i> &nbsp;Groups</a></h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        CCCCCCCCCC
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-calendar-o" aria-hidden="true"></i> &nbsp;Calendar</a></h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        DDDDDDDDDDD
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i> &nbsp;Tasks</a></h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+                        EEEEEEEEEEEE
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-link" aria-hidden="true"></i> &nbsp;Links</a></h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                        F
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-sticky-note-o" aria-hidden="true"></i> &nbsp;Notes</a></h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                    <div class="panel-body">
+                       G
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingEight">
+                    <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseFour"><i class="more-less glyphicon glyphicon-plus-sign"></i>
+						<i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;Files</a></h4>
+                </div>
+                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                    <div class="panel-body">
+                        H
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <!-- container -->
+    <script src='js/jquery.js'></script>
+    <script src='js/bootstrap.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
