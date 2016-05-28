@@ -3,4 +3,4 @@ This is the bootstrap accordion sample with have changeable icons<br>
 <br>
 <br>
 <br>
-![Alt text](http://full/path/to/img.jpg "Optional title")
+![Alt text](https://github.com/david3310/BootstrapAccordionWithIconChange/blob/master/screenshot.jpg "Look")
